@@ -213,7 +213,7 @@ async def excel_report():
                 ])
         elif name == "Inventory":
             for x in feed:
-                ws.append([x["item"], x["quantity"], x["unit"], x["reorder_level"])
+                ws.append([x["item"], x["quantity"], x["unit"], x["reorder_level"]])
         else:
             for row in rows[1:]:
                 ws.append(row)
