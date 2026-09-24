@@ -24,8 +24,7 @@ import {
 } from "lucide-react";
 import "./App.css";
 
-const API = `${process.env.REACT_APP_BACKEND_URL || "http://localhost:8000"}/api`;
-
+const API = "/api";
 const money = (value) =>
   `PKR ${Number(value || 0).toLocaleString("en-PK")}`;
 
